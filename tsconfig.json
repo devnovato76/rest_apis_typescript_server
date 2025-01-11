@@ -3,11 +3,17 @@
         "outDir": "./dist",
         "rootDir": "./src",
         "lib": ["ESNext","DOM"],
+        "target": "ESNext",
+        "moduleResolution": "NodeNext",
+        "module": "NodeNext",
         "strict": false,
         "sourceMap": true,
         "esModuleInterop": true,
         "allowSyntheticDefaultImports": true,
-        "declaration": true
+        "declaration": true,
+        "experimentalDecorators": true,
+        "emitDecoratorMetadata": true
     },
-    "include": ["src/**/*.ts"]
+    "include": ["src/**/*.ts"],
+    "exclude": ["src/**/*.test.ts"]
 }
